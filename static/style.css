@@ -7,7 +7,7 @@
     --ah: #b7bdf8;
     --h2: #a6adc8;
     --input_search-bg: #313244;
-    --input_search-color: #868da4;
+    --input_search-color: #b4befe;
     --button-cs: #6c7086;
     --button-cs-hover: #eff1f5;
 }
@@ -43,7 +43,7 @@ a {
 
 #tagcloud {
 	list-style: none ;
-	text-align: center ;
+	text-align: left ;
 	padding: 0 ;
 }
 
@@ -66,8 +66,8 @@ a:hover {
 
 h1 {
 	border-style: solid ;
-	border-width: 0px 0px 2px 0px ;
-	text-align: center ;
+	border-width: 0px 0px 0px 0px ;
+	text-align: left ;
 }
 
 h2 {
@@ -169,7 +169,7 @@ input#search {
   width: 400px;
   max-width: 85vw;
   position: relative;
-  margin: 0.5rem auto 1.2rem;
+  margin: 0.5rem 0px 2rem 0px;
   display: flex;
 }
 

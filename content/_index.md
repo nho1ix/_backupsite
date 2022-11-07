@@ -1,10 +1,10 @@
 ---
-title: "Business Ideas"
-description: 'The fast-loading business ideas site with no ads.'
+title: "Random Ideas"
+description: 'The fast-loading random ideas site with no ads.'
 layout: single
 ---
 
-## Ideas To Try to Make A Business Out Of
+## Ideas To Try
 
 <div class="search js-only">
   <input type="text" id="search" placeholder="Search ideas...">
