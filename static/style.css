@@ -95,9 +95,10 @@ code {
 }
 
 .taglist {
-	text-align: center ;
+	text-align: left;
 	margin-bottom: 2em ;
 	margin-top: 2em ;
+  margin-left: 1em;
 }
 
 img[alt="BTC Logo"],

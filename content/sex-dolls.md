@@ -2,6 +2,7 @@
 title: "Sex Dolls"
 date: 2022-11-06T12:41:02-08:00
 author: vk
+tags: ['sex']
 ---
 
 - Preparation time: ~3 months
