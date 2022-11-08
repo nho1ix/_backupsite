@@ -11,6 +11,7 @@
     --button-cs: #6c7086;
     --button-cs-hover: #eff1f5;
 }
+
 body {
 	background: var(--body-bg) ;
 	color: var(--body-color);
