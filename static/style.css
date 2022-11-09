@@ -175,6 +175,11 @@ input#search {
   display: flex;
 }
 
+#nextprev {
+  display: flex;
+  justify-content: space-between;
+}
+
 button#clear-search {
   all: unset;
   position: absolute;
