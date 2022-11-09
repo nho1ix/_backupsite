@@ -207,7 +207,7 @@ ul#entries {
 .list-searched {
 	column-count: 1 !important ;
 	list-style: decimal ;
-	max-width: 600px ;
+	/* max-width: 600px ; */
 	margin: auto ;
 }
 
