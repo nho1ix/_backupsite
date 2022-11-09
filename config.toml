@@ -1,6 +1,6 @@
 baseURL = 'https://nho1ix.github.io/'
 languageCode = 'en-us'
-title = 'Random Ideas'
+title = 'Business Ideas'
 theme = 'lugo'
 
 [params]
