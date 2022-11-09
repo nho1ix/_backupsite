@@ -1,0 +1,66 @@
+{{ define "title" }}
+{{ .Title | humanize }}
+{{ end }}
+{{ define "main" }}
+
+  <div class="container">
+    <h1 id="header">Entries</h1>
+    <ul id="entries">
+      <div class="search">
+        <input type="text" id="search" placeholder="Search entries...">
+        <button id="clear-search"></button>
+      </div>
+    <script>
+    // @license magnet:?xt=urn:btih:5ac446d35272cc2e4e85e4325b146d0b7ca8f50c&dn=unlicense.txt Unlicense
+    
+    document.addEventListener("DOMContentLoaded", () => {
+      for (e of document.getElementsByClassName("js-only")) {
+        e.classList.remove("js-only");
+      }
+    
+      const business = document.querySelectorAll("#entries li");
+      const search = document.getElementById("search");
+      const oldheading = document.getElementById("header");
+      const clearSearch = document.getElementById("clear-search");
+      const entries = document.getElementById("entries");
+    
+      search.addEventListener("input", () => {
+        // grab search input value
+        const searchText = search.value.toLowerCase().trim().normalize('NFD').replace(/\p{Diacritic}/gu, "");
+        const searchTerms = searchText.split(" ");
+        const hasFilter = searchText.length > 0;
+    
+        entries.classList.toggle("list-searched", hasFilter);
+        oldheading.classList.toggle("hidden", hasFilter);
+    
+        // for each idea hide all but matched
+        business.forEach(idea => {
+          const searchString = `${idea.textContent} ${idea.dataset.tags}`.toLowerCase().normalize('NFD').replace(/\p{Diacritic}/gu, "");
+          const isMatch = searchTerms.every(term => searchString.includes(term));
+    
+          idea.hidden = !isMatch;
+          idea.classList.toggle("matched-idea", hasFilter && isMatch);
+        })
+      })
+    
+      clearSearch.addEventListener("click", () => {
+        search.value = "";
+        business.forEach(idea => {
+          idea.hidden = false;
+          idea.classList.remove("matched-idea");
+        })
+    
+        entries.classList.remove("list-searched");
+        oldheading.classList.remove("hidden");
+      })
+    })
+    // @license-end
+    </script>
+      {{ range .Data.Pages }}
+        <li>
+          <a href="{{ .Permalink }}">{{ .Title }}</a>
+        </li>
+      {{ end }}
+    </ul>
+  </div>
+{{ end }}

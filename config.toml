@@ -16,4 +16,4 @@ theme = 'lugo'
 
 [module]
 [[module.imports]]
-  path = 'github.com/lukesmithxyz/lugo'
+  path = 'github.com/nho1ix/lugo'

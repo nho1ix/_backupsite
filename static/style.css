@@ -190,6 +190,9 @@ button#clear-search:hover {
   color: var(--button-cs-hover);
 }
 
+ul#entries {
+  margin-bottom: 2em;
+}
 
 .matched-idea {
 	font-size: x-large ;
