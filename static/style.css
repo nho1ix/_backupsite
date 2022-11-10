@@ -1,26 +1,26 @@
 :root {
-    --body-bg: #11111b;
-    --body-color: #c6a0f6;
-    --scrollbar: #24273a;
-    --a: #ccd6f4;
-    --av: #8087a2;
-    --ah: #b7bdf8;
-    --h2: #a6adc8;
-    --input_search-bg: #313244;
-    --input_search-color: #b4befe;
-    --button-cs: #6c7086;
-    --button-cs-hover: #eff1f5;
+  --body-bg: #11111b;
+  --body-color: #c6a0f6;
+  --scrollbar: #24273a;
+  --a: #ccd6f4;
+  --av: #8087a2;
+  --ah: #b7bdf8;
+  --h2: #a6adc8;
+  --input_search-bg: #313244;
+  --input_search-color: #b4befe;
+  --button-cs: #6c7086;
+  --button-cs-hover: #eff1f5;
 }
 
 body {
-	background: var(--body-bg) ;
-	color: var(--body-color);
-	max-width: 850px ;
-	margin: auto ;
-	padding: 0 16px ;
-	margin-bottom: 500px ;
-	scrollbar-color: var(--body-color);
-	font-family: sans-serif ;
+  background: var(--body-bg);
+  color: var(--body-color);
+  max-width: 850px;
+  margin: auto;
+  padding: 0 16px;
+  margin-bottom: 500px;
+  scrollbar-color: var(--body-color);
+  font-family: sans-serif;
 }
 
 article {
@@ -29,133 +29,137 @@ article {
 }
 
 ::-webkit-scrollbar {
-	width: .66vw;
-	background-color: var(--body-color);
+  width: 0.66vw;
+  background-color: var(--body-color);
 }
 ::-webkit-scrollbar-thumb {
-	background-color: gray;
-	border-radius: 5px;
+  background-color: gray;
+  border-radius: 5px;
 }
 
 a {
-	color: var(--a) ;
-	text-decoration: none ;
+  color: var(--a);
+  text-decoration: none;
 }
 
 #tagcloud {
-	list-style: none ;
-	text-align: left ;
-	padding: 0 ;
+  list-style: none;
+  text-align: left;
+  padding: 0;
 }
 
 #tagcloud li {
-	display: inline-block ;
+  display: inline-block;
 }
 
 #tagcloud a {
-	margin: .1em .25em ;
+  margin: 0.1em 0.25em;
 }
 
 a:visited {
-	color: var(--av) ;
+  color: var(--av);
 }
 
 a:hover {
-	color: var(--ah) ;
-	text-decoration: underline;
+  color: var(--ah);
+  text-decoration: underline;
 }
 
 h1 {
-	border-style: solid ;
-	border-width: 0px 0px 0px 0px ;
-	text-align: left ;
+  border-style: solid;
+  border-width: 0px 0px 0px 0px;
+  text-align: left;
 }
 
 h2 {
-	color: var(--h2) ;
-	text-align: left ;
+  color: var(--h2);
+  text-align: left;
 }
 
 footer {
-	text-align: center ;
-	border-style: solid ;
-	border-width: 2px 0px 0px 0px ;
-	padding: 1em ;
+  text-align: center;
+  border-style: solid;
+  border-width: 2px 0px 0px 0px;
+  padding: 1em;
 }
 
 img {
-	max-width: 90% ;
-	max-height: 400px ;
-	margin: auto ;
-	display: block ;
+  max-width: 90%;
+  max-height: 400px;
+  margin: auto;
+  display: block;
 }
 
 code {
-	overflow-wrap: break-word ;
-	color: lime ;
+  overflow-wrap: break-word;
+  color: lime;
 }
 
 .taglist {
-	text-align: left;
-	margin-bottom: 2em ;
-	margin-top: 2em ;
+  text-align: left;
+  margin-bottom: 2em;
+  margin-top: 2em;
   margin-left: 1em;
 }
 
 img[alt="BTC Logo"],
 img[alt="ETH Logo"],
 img[alt="XMR Logo"] {
-	max-width: 1em ;
-	max-height: 1em ;
-	display: inline ;
+  max-width: 1em;
+  max-height: 1em;
+  display: inline;
 }
 
 @media (pointer: coarse) {
-	li > a {
-	    display: inline-block;
-		padding: 0.2em 0;
-	}
+  li > a {
+    display: inline-block;
+    padding: 0.2em 0;
+  }
 }
 
 @media print {
-	a[href] {
-		text-decoration: none ;
-		color: black ;
-	}
+  a[href] {
+    text-decoration: none;
+    color: black;
+  }
 
-	footer,.taglist { display: none ; }
+  footer,
+  .taglist {
+    display: none;
+  }
 
-	body {
-		margin: 0;
-	}
-
-
+  body {
+    margin: 0;
+  }
 }
 
 .older-article {
-	display: none ;
+  display: none;
 }
 
 .hidden {
-	display: none !important ;
+  display: none !important ;
 }
 
 #artlist {
-	font-size: large ;
+  font-size: large;
 }
 
 #artlist li {
-	padding: .25em ;
+  padding: 0.25em;
 }
 
 @media (min-width: 55em) {
-	#artlist { column-count: 2 ;}
+  #artlist {
+    column-count: 2;
+  }
 }
 
 @media (min-width: 100em) {
-	#artlist { column-count: 3 ;}
+  #artlist {
+    column-count: 3;
+  }
 }
-
 
 input#search {
   all: unset;
@@ -200,40 +204,52 @@ ul#entries {
 }
 
 .matched-idea {
-	font-size: x-large ;
-	display: list-item !important ;
+  font-size: x-large;
+  display: list-item !important ;
 }
 
 .list-searched {
-	column-count: 1 !important ;
-	list-style: decimal ;
-	/* max-width: 600px ; */
-	margin: auto ;
+  column-count: 1 !important ;
+  list-style: decimal;
+  /* max-width: 600px ; */
+  margin: auto;
 }
 
-#tag_fun:before { content: "🤣" ;}
-#tag_food:before { content: "🥘 " ;}
-#tag_hands-on:before { content: "👐 " ;}
-#tag_photo:before { content: "📷 " ;}
-#tag_sex:before { content: "🍆 " ;}
+#tag_fun:before {
+  content: "🤣 ";
+}
+#tag_food:before {
+  content: "🥘 ";
+}
+#tag_hands-on:before {
+  content: "👐 ";
+}
+#tag_photo:before {
+  content: "📷 ";
+}
+#tag_sex:before {
+  content: "🍆 ";
+}
 
 .cryptocontainer {
-    display: flex ;
-    flex-wrap: wrap ;
-    justify-content: center ;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 .cryptoinfo {
-    max-width: 350px ;
-    text-align: center ;
-    padding-left: 10px ;
-    padding-right: 10px ;
+  max-width: 350px;
+  text-align: center;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 .cryptoinfo code {
-	font-size: small ;
-	overflow-wrap: break-word ;
+  font-size: small;
+  overflow-wrap: break-word;
 }
 .qr {
-    max-height: 150px; ;
+  max-height: 150px;
 }
 
-.js-only { display: none ; }
+.js-only {
+  display: none;
+}
