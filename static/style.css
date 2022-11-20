@@ -215,21 +215,11 @@ ul#entries {
   margin: auto;
 }
 
-#tag_fun:before {
-  content: "🤣 ";
-}
-#tag_food:before {
-  content: "🥘 ";
-}
-#tag_hands-on:before {
-  content: "👐 ";
-}
-#tag_photo:before {
-  content: "📷 ";
-}
-#tag_sex:before {
-  content: "🍆 ";
-}
+#tag_fun:before { content: "🤣 "; }
+#tag_food:before { content: "🥘 "; }
+#tag_hands-on:before { content: "👐 "; }
+#tag_photo:before { content: "📷 "; }
+#tag_sex:before { content: "🍆 "; }
 
 .cryptocontainer {
   display: flex;
@@ -237,17 +227,22 @@ ul#entries {
   justify-content: center;
 }
 .cryptoinfo {
-  max-width: 350px;
-  text-align: center;
-  padding-left: 10px;
-  padding-right: 10px;
+    max-width: 350px ;
+    text-align: center ;
+    padding-left: 10px ;
+    padding-right: 10px ;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
 }
 .cryptoinfo code {
   font-size: small;
   overflow-wrap: break-word;
 }
 .qr {
-  max-height: 150px;
+  max-height: 150px; ;
+	padding-top: 10px;
+	padding-bottom: 10px;
 }
 
 .js-only {
